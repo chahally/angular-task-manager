@@ -1,0 +1,15 @@
+<h2>Add Task</h2>
+
+<!--
+Input field bound to the "title" property using ngModel.
+-->
+<input
+  type="text"
+  [(ngModel)]="title"
+  placeholder="Enter a new task"
+/>
+
+<!--
+When the button is clicked, the addTask() method is executed
+-->
+<button (click)="addTask()">Add Task</button>

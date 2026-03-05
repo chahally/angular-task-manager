@@ -1,12 +1,19 @@
-import { Component, signal } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { Component } from '@angular/core';
+import { AddTaskComponent } from './components/add-task/add-task';
+import { TaskListComponent } from './components/task-list/task-list';
+
+/**
+ * Root Application Component
+ * This component acts as the main container for the task manager application.
+ */
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
-  templateUrl: './app.html',
-  styleUrl: './app.css'
+  standalone: true,
+  imports: [AddTaskComponent, TaskListComponent],
+  template: `
+    <app-add-task></app-add-task>
+    <app-task-list></app-task-list>
+  `
 })
-export class App {
-  protected readonly title = signal('task-manager');
-}
+export class AppComponent {}
