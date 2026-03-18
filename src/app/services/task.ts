@@ -14,30 +14,27 @@ export class TaskService {
   // In-memory list of tasks
   tasks: Task[] = [];
 
-  /**
-   * Returns the current list of tasks
-   */
+  // Returns the current list of tasks
   getTasks() {
-    return this.tasks;
-  }
+  const data = localStorage.getItem('tasks');
+  return data ? JSON.parse(data) : [];
+}
 
-  /**
-   * Adds a new task to the task list
-   */
+  // Adds a new task to the task list
   addTask(task: Task) {
-    this.tasks.push(task);
-  }
+  this.tasks.push(task);
+  localStorage.setItem('tasks', JSON.stringify(this.tasks));
+}
 
-  /**
-   * Deletes a task based on its id
-   */
+  // Deletes a task based on its id
   deleteTask(id: number) {
-    this.tasks = this.tasks.filter(task => task.id !== id);
+  const index = this.tasks.findIndex(task => task.id === id);
+  if (index > -1) {
+    this.tasks.splice(index, 1);
   }
+}
 
-  /**
-   * Toggles the completed state of a task
-   */
+  // Toggles the completed state of a task
   toggleTask(id: number) {
     const task = this.tasks.find(task => task.id === id);
 

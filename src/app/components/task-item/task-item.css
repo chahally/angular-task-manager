@@ -1,0 +1,16 @@
+.task-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.3rem 0;
+}
+
+.completed {
+  text-decoration: line-through;
+  color: grey;
+}
+
+button {
+  margin-left: auto;
+  cursor: pointer;
+}

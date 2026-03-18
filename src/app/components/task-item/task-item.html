@@ -1,1 +1,16 @@
-<p>task-item works!</p>
+<!--
+  Displays a single task with:
+  - Checkbox to toggle completion
+  - Task title
+  - Delete button
+-->
+
+<div class="task-item" [class.completed]="task.completed">
+  <input
+    type="checkbox"
+    [checked]="task.completed"
+    (change)="onToggle()"
+  />
+  {{ task.title }}
+  <button (click)="onDelete()">Delete</button>
+</div>

@@ -26,10 +26,12 @@ export class AddTaskComponent {
    * Creates a new task and sends it to the TaskService
    */
   addTask() {
+  if (!this.title.trim()) return;
+  // addTask() {
 
     const task: Task = {
 
-      // Using current timestamp as a simple unique id
+      // Using current timestamp as a simple unique ID
       id: Date.now(),
 
       // Task title entered by the user

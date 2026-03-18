@@ -1,0 +1,95 @@
+/* Container */
+.add-task-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2rem auto;
+  padding: 1.5rem 2rem;
+  background: #f8f8ff;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  max-width: 450px;
+}
+
+/* Title */
+.add-task-container h2 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600; 
+  color: #4a4a4a;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+}
+
+/* Input + Button wrapper */
+.input-wrapper {
+  display: flex;
+  width: 100%;
+}
+
+/* Input field */
+.input-wrapper input[type="text"] {
+  flex: 1;
+  padding: 0.6rem 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px 0 0 8px;
+  font-size: 1rem;
+  transition: all 0.3s;
+}
+
+.input-wrapper input[type="text"]:focus {
+  outline: none;
+  border-color: #7b5fff;
+  box-shadow: 0 0 8px rgba(123, 95, 255, 0.3);
+}
+
+/* Button */
+.input-wrapper button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 1.2rem;
+  background: #7b5fff;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 500;
+  border: none;
+  border-radius: 0 8px 8px 0; 
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+/* Hover effect */
+.input-wrapper button:hover {
+  background: #5a3fcc;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(90, 63, 204, 0.4);
+}
+
+/* Plus icon inside button */
+.plus-icon {
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-right: 0.5rem;
+  display: inline-block;
+  line-height: 1;
+  transition: transform 0.2s;
+}
+
+.input-wrapper button:hover .plus-icon {
+  transform: rotate(90deg);
+}
+
+/* Responsive tweaks */
+@media (max-width: 500px) {
+  .add-task-container {
+    padding: 1rem 1.2rem;
+  }
+  .input-wrapper input[type="text"] {
+    font-size: 0.95rem;
+  }
+  .input-wrapper button {
+    font-size: 0.95rem;
+  }
+}

@@ -4,7 +4,7 @@ import { TaskListComponent } from './components/task-list/task-list';
 
 /**
  * Root Application Component
- * This component acts as the main container for the task manager application.
+ * This component acts as the main container for the application.
  */
 
 @Component({

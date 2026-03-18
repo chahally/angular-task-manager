@@ -1,15 +1,18 @@
-<h2>Add Task</h2>
+<!-- Add Task Component -->
+<div class="add-task-container">
+  <h2>Add Task</h2>
+  
+  <div class="input-wrapper">
+    <!-- Input bound to title -->
+    <input
+      type="text"
+      [(ngModel)]="title"
+      placeholder="Enter a new task"
+    />
 
-<!--
-Input field bound to the "title" property using ngModel.
--->
-<input
-  type="text"
-  [(ngModel)]="title"
-  placeholder="Enter a new task"
-/>
-
-<!--
-When the button is clicked, the addTask() method is executed
--->
-<button (click)="addTask()">Add Task</button>
+    <!-- Button with plus icon -->
+    <button (click)="addTask()">
+      <span class="plus-icon">+</span> Add Task
+    </button>
+  </div>
+</div>
