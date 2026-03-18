@@ -1,59 +1,34 @@
-# TaskManager
+## Task Manager (Angular)
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.2.0.
+A responsive task manager application built using Angular, with a clean UI designed for usability.
 
-## Development server
+## Features
 
-To start a local development server, run:
+Add new tasks
+Mark tasks as complete/incomplete
+Delete tasks
+Styled UI with gradients and hover effects
+Notebook-style design with icons
+Built using Angular standalone components
 
-```bash
-ng serve
-```
+## Screenshots
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+<img width="1454" height="769" alt="image" src="https://github.com/user-attachments/assets/f7787cf8-7793-43b8-90be-3221517abcc4" />
 
-## Code scaffolding
+## Tech Stack
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+Angular (v21)
+TypeScript
+HTML
+CSS
 
-```bash
-ng generate component component-name
-```
+## To Run Locally
+1. Clone the repo: git clone https://github.com/your-username/task-manager.git
+2. Install dependencies: npm install
+3. Run the app: ng serve
+4. Then open: http://localhost:4200/
+🙌 Acknowledgements
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+Built as part of my journey into Angular and frontend development.
 
-```bash
-ng generate --help
-```
 
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
