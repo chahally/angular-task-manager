@@ -1,4 +1,4 @@
-## Task Manager (Angular)
+## Task Manager (Angular Project)
 
 A responsive task manager application built using Angular, with a clean UI designed for usability.
 
